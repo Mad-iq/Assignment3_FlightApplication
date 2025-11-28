@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PassengerRequest {
 
-    @NotBlank
+    @NotBlank(message = "Passenger name is required")
     private String name;
 
-    @NotBlank
+    @NotBlank(message= "Passenger gender is required")
     private String gender;
 
-    @Min(value = 1)
+    @Min(value = 1, message= "Age must be valid")
     private int age;
 }

@@ -13,7 +13,7 @@ public class SearchFlightRequest {
     @NotBlank(message = "Destination is required")
     private String destination;
 
-    @NotBlank(message = "Journey date is required (yyyy-MM-dd)")
+    @NotBlank(message = "Journey date is required (yyyy-mm-dd)")
     private String journeyDate;
 
     @Min(1)
